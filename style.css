@@ -56,3 +56,436 @@ div, .scroll-icon-position{
     font-weight: 600;
     font-size: 40px;
   }
+
+
+
+
+
+  @font-face {
+	font-family: Roboto;
+	src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/565097/Roboto-Regular.woff2")
+			format("woff2"),
+		url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/565097/Roboto-Regular.woff")
+			format("woff"),
+		url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/565097/Roboto-Regular.ttf")
+			format("ttf");
+	font-weight: 400;
+	font-style: normal;
+}
+*, *:before, *:after {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+body,
+html {
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+body.scroll-off{
+	overflow-y: hidden;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+title,
+p {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: "Roboto";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	font-family: "Roboto";
+	font-weight: 600;
+}
+h1 {
+	font-size: 3em;
+}
+h2 {
+	font-size: 2.6em;
+}
+h3 {
+	font-size: 2em;
+}
+h4 {
+	font-size: 1.5em;
+}
+h5 {
+	font-size: 1em;
+}
+h6 {
+	font-size: 0.8em;
+}
+/* ================================= *
+ * Cards outer Styling
+ ==================================== */
+main.concord {
+	margin: 20px 0;
+	text-align: center;
+}
+.concord > header {
+	width: 90%;
+	padding: 0px 15px 0px 15px;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	overflow: auto;
+	text-align: left;
+}
+.concord > header time {
+	display: table-cell;
+	float: left;
+	color: black;
+}
+.concord > header time:first-child {
+	color: #8f8f91;
+}
+.concord > header time h3 {
+	color: black;
+	font-weight: 700;
+}
+
+.concord > header avatar{
+	display: table-cell;
+	text-align: right;
+	float: right;
+	background-position: center;
+	background-size: 120%;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+}
+/* ================================= *
+ * Card Styling + Default
+ ==================================== */
+.card {
+	z-index: 1;
+	cursor: pointer;
+	display: inline-block;
+	position: static;
+	text-align: left;
+	width: 89%;
+	height: 400px;
+	max-height: 400px;
+	border-radius: 10px;
+	margin: 15px 8px;
+	overflow: hidden;
+	background: white;
+	box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.10),
+		0px 1px 20px 0px rgba(0, 0, 0, 0.10);
+	transform-origin: center;
+	transition: transform, width, height, border-radius, top, left;
+  	transition-duration: 500ms;
+  	transition-timing-function: ease-in-out;
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	-ms-user-select:none; 
+	user-select:none;
+	-o-user-select:none;
+}
+.card.gate_reserved{
+	box-shadow: none;
+}
+.card .wrapper {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	display: table; 
+}
+.card h5,
+.card h6,
+.card p {
+	margin: 4px 0;
+}
+.card h6,
+.card p {
+	color: #8f8f91;
+}
+.card h6 {
+	text-transform: uppercase;
+}
+.card video,
+.card img {
+	display: table-cell;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.card > .wrapper > header,
+.card > .wrapper > footer{
+	display: table-cell;
+	width: 100%;
+	height: auto;
+	padding: 15px 20px;
+	box-sizing: border-box;
+}
+.card > .wrapper > footer{
+	background: white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.card:active {
+	transform: scale(0.97);
+}
+
+/* Card Style: x */
+.card.x h4,
+.card.x p {
+	color: white;
+}
+.card.x h6 {
+	color: rgba(255, 255, 255, 0.65);
+}
+.card.x > .wrapper > header,
+.card.x > .wrapper > footer {
+	position: absolute;
+	left: 0;
+	background: transparent;
+	padding: 15px 20px;
+}
+.card.x > .wrapper > header {
+	top: 0;
+}
+.card.x > .wrapper > footer {
+	bottom: 0;
+}
+/* Card Style: v */
+.card.im .wrapper{display: block;}
+.card.im video{object-fit: cover;}
+.card.im video:before{
+	position: absolute;
+	right: 15px;
+	top: 0;
+	background: rgba(255,255,255,0.3);
+	content: "mute";
+}
+
+/* Card Style: i */
+.card.i h2,
+.card.i h6,
+.card.i p{
+	color: white;
+}
+.card.i h2{
+	width: 50%;
+	text-transform: uppercase;
+}
+.card.i p{
+	font-size: 0.7em;
+}
+.card.i > .wrapper > header,
+.card.i > .wrapper > footer {
+	position: absolute;
+	left: 0;
+	padding: 15px 20px;
+}
+.card.i > .wrapper > header{
+	top: 0;
+}
+.card.i > .wrapper > header img{
+	width: 70px;
+	height: 70px;
+	border-radius: 18px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: white;
+}
+.card.i > .wrapper > footer {
+	background: transparent;
+	bottom: 0;
+}
+button.card{
+	position: relative;
+	height: auto;
+	width: auto;
+	border: 0;
+	outline: 0;
+	font-weight: 600;
+	color: rgba(28, 111, 215, 0.88);
+	text-align: left;
+	background: rgba(255,255,255,0.95);
+	border-radius: 20px;
+	padding: 4.4px 13px;
+}
+/* Card Style~input styling*/
+input[type="button"].concord{
+	cursor: pointer;
+	position: absolute;
+	height: auto;
+	width: auto;
+	border: 0;
+	outline: 0;
+	font-weight: 600;
+	color: rgba(28, 80, 245, 0.98);
+	text-align: left;
+	background: rgba(255,255,255,0.95);
+	border-radius: 20px;
+	padding: 4.4px 13px;
+	margin: 0;
+	right: 20px;
+	bottom: 19px;
+	box-sizing: border-box;
+}
+input[type="button"].concord:active{
+	color: rgba(28, 80, 245, 0.48);
+}
+input[type="button"].concord.exit{
+	display: none;
+	z-index: 99;
+	top: 15px;
+	right: 20px;
+	bottom: initial;
+	padding: 2px 7px;
+	font-size: 1.2em;
+	line-height: 1em;
+	color: rgba(255,255,255,0.75);
+	background: rgba(20,20,25,0.65);
+	padding-bottom: 5px;
+	
+}
+input[type="button"].concord-exit:active{
+	color: rgba(28, 80, 245, 0.48);
+}
+/* Card State: Content and Card active Styling*/
+.card > .content{
+	margin-top: 60px;
+	margin-bottom: 20px;
+	opacity: 0;
+	width: 100%;
+	height: 0px;
+	transition: height, opacity, margin;
+  	transition-duration: 900ms;
+  	transition-timing-function: ease-in-out;
+}
+	.card > .content p{
+		margin: 35px 20px;
+		color: #8f8f91;
+	}
+		.card > .content p + p{
+			margin-top: 0;
+		}
+		.card > .content p > b{
+			color: black;
+		}
+	.card > .content img{
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 300px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.card > .content img:after{
+		
+	}
+.card.in-flight{
+	cursor: default;
+	z-index: 98;
+	display: block;
+	max-height: none;
+	max-width: none;
+	top: 40px!important;
+	height: 95vh !important;
+	width: 100vw !important;
+	margin: 0;
+	overflow-y: scroll;
+	transform: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.card.active:hover{
+	transform: none;
+}
+.card.in-flight > .wrapper{
+	height: 55%;
+}
+.card.in-flight > input[type="button"].concord.exit{
+	display: block;
+}
+.card.in-flight > .content{
+	margin-top: 0px;
+	height: 45%;
+	background: white;
+	opacity: 1;
+}
+
+.raa-1{
+	margin-top: 80px;
+	margin-bottom: 50px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+
+@media screen and (min-width: 530px){
+	.card{
+		width: 75%;
+	}
+}
+@media screen and (min-width: 600px){
+	.card{
+		max-width:340px;
+		width: 65%;
+	}
+}
+@media screen and (max-width: 599px){
+	.card.in-flight{
+		border-radius: 0;
+		max-width: 100%;
+		top: 0!important; 
+		left:0!important;
+	}
+}
+@media screen and (min-width: 600px){
+	.card.in-flight{
+		left: calc((100vw - 460px) / 2)!important;
+		max-width: 460px!important;
+	}
+}
+@media screen and (min-width: 730px){
+	.card{
+		max-width:340px;
+		width: 40%;
+	}
+	.card.in-flight{
+		left: calc((100vw - 700px) / 2)!important;
+		max-width: 700px!important;
+	}
+}
+@media screen and (min-width: 1000px){
+	.card{
+		width: 340px;
+	}
+	.card.xl{
+		width: 600px;
+		max-width: 600px;
+	}
+	.card.xl.active{
+		width: 100%;
+		max-width: 700px;
+	}
+}
