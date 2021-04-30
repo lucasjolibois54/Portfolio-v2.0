@@ -12,6 +12,36 @@
 	font-style: normal;
 }
 
+
+
+.btn-grad {background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%)}
+.btn-grad {
+   
+   
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   display: block;
+   text-decoration: none;
+   display: inline-block;
+   padding: 0.7375em 0.99em;
+   border-radius: 2em;
+   font-size: 14px;
+   margin: 0.5em 0;
+   padding-bottom: 0.7375em;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* changes the direction of the grad on button */
+   color: #fff;
+   text-decoration: none;
+ }
+
+
+
 .btn{
     text-decoration: none;
     background: #D7793E;
@@ -514,54 +544,8 @@ input[type="button"].concord-exit:active{
 	padding-bottom: 7vh;
 }
 
-@media screen and (min-width: 530px){
-	.card{
-		width: 75%;
-	}
-}
-@media screen and (min-width: 600px){
-	.card{
-		max-width:340px;
-		width: 65%;
-	}
-}
-@media screen and (max-width: 599px){
-	.card.in-flight{
-		border-radius: 0;
-		max-width: 100%;
-		top: 0!important; 
-		left:0!important;
-	}
-}
-@media screen and (min-width: 600px){
-	.card.in-flight{
-		left: calc((100vw - 460px) / 2)!important;
-		max-width: 460px!important;
-	}
-}
-@media screen and (min-width: 730px){
-	.card{
-		max-width:340px;
-		width: 40%;
-	}
-	.card.in-flight{
-		left: calc((100vw - 700px) / 2)!important;
-		max-width: 700px!important;
-	}
-}
-@media screen and (min-width: 1000px){
-	.card{
-		width: 340px;
-	}
-	.card.xl{
-		width: 600px;
-		max-width: 600px;
-	}
-	.card.xl.active{
-		width: 100%;
-		max-width: 700px;
-	}
-}
+
+
 
 
 
@@ -647,3 +631,66 @@ input[type="button"].concord-exit:active{
 .dot:hover {
     background-color: #717171
 }
+
+
+
+/*footer*/
+.the-site-footer{
+	text-align: center;
+	padding-bottom: 5vh;
+	margin-top: 9vh;
+}
+
+
+
+
+
+@media screen and (min-width: 530px){
+	.card{
+		width: 75%;
+	}
+}
+@media screen and (min-width: 600px){
+	.card{
+		max-width:340px;
+		width: 65%;
+	}
+}
+@media screen and (max-width: 599px){
+	.card.in-flight{
+		border-radius: 0;
+		max-width: 100%;
+		top: 0!important; 
+		left:0!important;
+	}
+}
+@media screen and (min-width: 600px){
+	.card.in-flight{
+		left: calc((100vw - 460px) / 2)!important;
+		max-width: 460px!important;
+	}
+}
+@media screen and (min-width: 730px){
+	.card{
+		max-width:340px;
+		width: 40%;
+	}
+	.card.in-flight{
+		left: calc((100vw - 700px) / 2)!important;
+		max-width: 700px!important;
+	}
+}
+@media screen and (min-width: 1000px){
+	.card{
+		width: 340px;
+	}
+	.card.xl{
+		width: 600px;
+		max-width: 600px;
+	}
+	.card.xl.active{
+		width: 100%;
+		max-width: 700px;
+	}
+}
+
