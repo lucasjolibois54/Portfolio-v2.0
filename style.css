@@ -1,6 +1,15 @@
 
-*{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  @font-face {
+	font-family: Roboto;
+	src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/565097/Roboto-Regular.woff2")
+			format("woff2"),
+		url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/565097/Roboto-Regular.woff")
+			format("woff"),
+		url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/565097/Roboto-Regular.ttf")
+			format("ttf");
+	font-weight: 400;
+	font-style: normal;
 }
 
 .btn{
@@ -8,7 +17,7 @@
     background: #D7793E;
     display: inline-block;
     color: #ffff;
-    padding: 0.7375em 0.85em;
+    padding: 0.7375em 0.99em;
     border-radius: 2em;
     font-size: 14px;
     margin: 0.5em 0;
@@ -72,7 +81,7 @@ div, .scroll-icon-position{
     text-align: center;
     padding-left: 30%;
     padding-right: 30%;
-    padding-top: 250px;
+    padding-top: 22vh;
     font-weight: 600;
     font-size: 40px;
   }
@@ -81,17 +90,6 @@ div, .scroll-icon-position{
 
 
 
-  @font-face {
-	font-family: Roboto;
-	src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/565097/Roboto-Regular.woff2")
-			format("woff2"),
-		url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/565097/Roboto-Regular.woff")
-			format("woff"),
-		url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/565097/Roboto-Regular.ttf")
-			format("ttf");
-	font-weight: 400;
-	font-style: normal;
-}
 *, *:before, *:after {
 		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
@@ -453,6 +451,11 @@ input[type="button"].concord-exit:active{
 	opacity: 1;
 }
 
+.the-btn{
+	text-align: center;
+	margin-top: -20px;
+}
+
 .raa-1{
 	margin-top: 80px;
 	margin-bottom: 80px;
@@ -487,6 +490,18 @@ input[type="button"].concord-exit:active{
 
 .talk-p{
 	padding-bottom: 4vh;
+}
+
+.txt-rotate{
+	color: #D7793E;
+	text-align: center;
+}
+
+.text-type-home{
+	text-align: center;
+	font-size: 10px;
+	margin-bottom: 0vh;
+	margin-top: 5vh;
 }
 
 @media screen and (min-width: 530px){
@@ -536,15 +551,4 @@ input[type="button"].concord-exit:active{
 		width: 100%;
 		max-width: 700px;
 	}
-}
-.txt-rotate{
-	color: #D7793E;
-	text-align: center;
-}
-
-.text-type-home{
-	text-align: center;
-	font-size: 10px;
-	margin-bottom: 20vh;
-	margin-top: 10vh;
 }
