@@ -28,4 +28,21 @@
 div, .scroll-icon-position{
     text-align: center;
   }
-  
+
+
+  .about-me-h2{
+    text-align: center;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 250px;
+    font-weight: 600;
+    font-size: 40px;
+  }
+
+
+  .about-me-p{
+      padding-left: 22%;
+      padding-right: 22%;
+      text-align: center;
+      font-size: 25px;
+  }
