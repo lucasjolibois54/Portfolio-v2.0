@@ -3,6 +3,25 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.btn{
+    text-decoration: none;
+    background: #D7793E;
+    display: inline-block;
+    color: #ffff;
+    padding: 0.7375em 0.85em;
+    border-radius: 2em;
+    font-size: 14px;
+    margin: 0.5em 0;
+    padding-bottom: 0.7375em;
+}
+
+/*adds a hover effect to the second button*/
+.btn:hover{
+    color: #FCB905;
+    background: #111111;
+}
+
+
 .title-home{
     text-align: center;
     padding-left: 30%;
@@ -435,7 +454,7 @@ input[type="button"].concord-exit:active{
 
 .raa-1{
 	margin-top: 80px;
-	margin-bottom: 50px;
+	margin-bottom: 80px;
 	padding-left: 10%;
 	padding-right: 10%;
 }
@@ -447,7 +466,7 @@ input[type="button"].concord-exit:active{
 }
 
 .learn-more-project-p{
-	padding-bottom: 20px;
+	padding-bottom: -20px;
 
 }
 
