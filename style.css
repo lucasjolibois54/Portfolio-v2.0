@@ -510,6 +510,10 @@ input[type="button"].concord-exit:active{
 	margin-bottom: -50px;
 }
 
+.logo-bunny-stuff{
+	padding-bottom: 7vh;
+}
+
 @media screen and (min-width: 530px){
 	.card{
 		width: 75%;
