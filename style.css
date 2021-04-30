@@ -537,3 +537,14 @@ input[type="button"].concord-exit:active{
 		max-width: 700px;
 	}
 }
+.txt-rotate{
+	color: #D7793E;
+	text-align: center;
+}
+
+.text-type-home{
+	text-align: center;
+	font-size: 10px;
+	margin-bottom: 20vh;
+	margin-top: 10vh;
+}
