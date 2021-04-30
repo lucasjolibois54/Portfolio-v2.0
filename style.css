@@ -46,3 +46,13 @@ div, .scroll-icon-position{
       text-align: center;
       font-size: 25px;
   }
+
+
+  .featured-projects-h2{
+    text-align: center;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 250px;
+    font-weight: 600;
+    font-size: 40px;
+  }
