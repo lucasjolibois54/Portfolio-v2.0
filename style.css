@@ -441,6 +441,16 @@ input[type="button"].concord-exit:active{
 }
 
 
+.learn-more-project{
+	margin-top: 0px;
+	margin-bottom: -100px;
+}
+
+.learn-more-project-p{
+	padding-bottom: 20px;
+
+}
+
 @media screen and (min-width: 530px){
 	.card{
 		width: 75%;
