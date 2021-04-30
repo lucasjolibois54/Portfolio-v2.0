@@ -381,7 +381,8 @@ input[type="button"].concord.exit{
 	line-height: 1em;
 	color: rgba(255,255,255,0.75);
 	background: rgba(20,20,25,0.65);
-	padding-bottom: 5px;
+	padding-bottom: 2.5px;
+	padding-top: 2.5px;
 	
 }
 input[type="button"].concord-exit:active{
@@ -556,4 +557,89 @@ input[type="button"].concord-exit:active{
 		width: 100%;
 		max-width: 700px;
 	}
+}
+
+
+
+
+/* carouselle*/
+
+.slideshow-container {
+    max-width: 80%;
+    position: relative;
+    margin: auto
+}
+
+.mySlides {
+    display: none;
+  height: auto;
+  border: solid 1px black;
+     
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #222428;
+    font-weight: bold;
+    font-size: 30px;
+    transition: .6s ease;
+    border-radius: 0 3px 3px 0
+}
+
+.next {
+    right: -50px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev {
+    left: -50px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev:hover,
+.next:hover {
+    color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding-top: 12px;
+  padding-bottom: 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #222428
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease
+}
+
+.active,
+.dot:hover {
+    background-color: #717171
 }
