@@ -26,7 +26,7 @@
     text-align: center;
     padding-left: 30%;
     padding-right: 30%;
-    padding-top: 250px;
+    padding-top: 45vh;
     font-weight: 600;
     font-size: 40px;
 }
@@ -40,7 +40,8 @@
     width: 2%;
     display: inline-block;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
+	margin-bottom: 30vh;
 
 }
 
@@ -53,7 +54,7 @@ div, .scroll-icon-position{
     text-align: center;
     padding-left: 30%;
     padding-right: 30%;
-    padding-top: 250px;
+    padding-top: 50px;
     font-weight: 600;
     font-size: 40px;
   }
@@ -418,9 +419,9 @@ input[type="button"].concord-exit:active{
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
-	.card > .content img:after{
+/*	.card > .content img:after{
 		
-	}
+	}*/
 .card.in-flight{
 	cursor: default;
 	z-index: 98;
@@ -469,6 +470,17 @@ input[type="button"].concord-exit:active{
 	padding-bottom: -20px;
 
 }
+
+.card > .content .raaaa p {
+	
+		margin: 5px;
+}
+
+.btn{
+	margin-bottom: 50px;
+}
+
+
 
 @media screen and (min-width: 530px){
 	.card{
