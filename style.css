@@ -480,7 +480,14 @@ input[type="button"].concord-exit:active{
 	margin-bottom: 50px;
 }
 
+.talk{
+	margin-top: 15vh;
+	margin-bottom: 12px;
+}
 
+.talk-p{
+	padding-bottom: 4vh;
+}
 
 @media screen and (min-width: 530px){
 	.card{
