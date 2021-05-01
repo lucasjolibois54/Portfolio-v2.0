@@ -639,6 +639,7 @@ input[type="button"].concord-exit:active{
 
 
 
+
 /*footer*/
 .the-site-footer{
 	text-align: center;
@@ -679,6 +680,15 @@ input[type="button"].concord-exit:active{
 
 	.mango{
 		padding-top: 10vh;
+	}
+
+
+	.wp-gif{
+		width: 100%;
+		height: auto;
+		padding-left: 5%;
+		padding-right: 5% !important;
+		padding-bottom: 5vh;
 	}
 
 
