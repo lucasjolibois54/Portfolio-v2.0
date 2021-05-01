@@ -789,6 +789,20 @@ input[type="button"].concord-exit:active{
 		padding-bottom: 5vh;
 	}
 
+	.footer-span{
+		text-decoration: none;
+		color: #FA6A29;
+		transition: .22s ease-in-out;
+		position: relative;
+		top: 0;
+	}
+
+	.footer-span:hover{
+		color: #ff5100;
+		transition: .22s ease-in-out;
+		top: -2px;
+		font-size: 17px;
+	}
 
 @media screen and (min-width: 530px){
 	.card{
