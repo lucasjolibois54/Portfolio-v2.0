@@ -6,15 +6,38 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://kit.fontawesome.com/06755d9ca7.js"></script> 
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+
+
+		 <!-- Navigation bar -->
+		 <header>
+			<!--logo (name of the portfolio)-->
+			<div class="logo">Lucas Bendix Jolibois - Portfolio</div>
+
+			<!--The menu options-->
+			<nav >
+			<ul>
+				<li><a class="active" href="index.html">Home</a></li>
+				<li><a href="my-projects.html">My projects</a></li>
+				<li><a href="about-me.html">About me</a></li>
+				<li><a href="contact-me.html">Contact me</a></li>
+			</ul>
+
+			<!--the burger menu-->
+		</nav>
+		<div class="burger-menu"><i class="fas fa-bars"></i></div>
+		</header>
+
+
 
         <section>
 
 <div>
         <h1 class="title-home">
-            Good evening; <br>
+            Hey there; <br>
 My name is <span class="span-color">Lucas </span> & I’m a <br>
 <span class="span-color"> multimedia designer </span> student!
         </h1> </div>
@@ -29,7 +52,7 @@ My name is <span class="span-color">Lucas </span> & I’m a <br>
 
     <section class="section-c">
 
-        <h2 class="about-me-h2">
+        <h2 class="about-me-h2 ">
             About me
         </h2>
 
@@ -269,7 +292,7 @@ of the serious coffee drinker.
 
 	<section class="section-c">
 
-        <h2 class="about-me-h2 talk">
+        <h2 class="me-h2 talk">
             Let’s talk!
         </h2>
 
@@ -296,6 +319,15 @@ intern at the beginning of 2022.
 	</div>
 	</footer>
 
+	
+		 <!--Makes the burger menu usable so that it has a function-->
+		 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+		 <script type="text/javascript">
+		 $(document).ready(function(){ /*all selectors starts with a "$"*/
+		 $('.burger-menu').click(function(){ /*makes it posible to click on the burger menu and adds a function to it*/
+		 $('nav').toggleClass('active')}) })</script>  <!--does so that the function that the bruger menu has is to activate the nav bar (the elemtent "nav" will be shown)-->
+
+   
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="main.js" async defer></script>
     </body>

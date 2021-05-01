@@ -14,6 +14,79 @@
 
 
 
+
+
+/*Navigation*/
+header{
+    position: absolute; /*makes it visible, without this, the nav bar would just have the same color as the background*/
+    top: 0; /*does so thhere is no white space on the top*/
+    left: 0; /*placement of the navbar*/
+    padding: 0 100px; /*placement of the nav-bar*/
+    background: transparent; /*background color of the nav bar*/
+    width: 100%; /*how much the nav bar should fill of the screen in width*/
+    box-sizing: border-box; /*turns it into boxes*/
+}
+
+/*logo in the navigation*/
+header .logo{
+    color: #000; /*font color in nav-bar*/
+    height: 50px; /*height of the nav-bar*/
+    line-height: 50px; /*lineheight in the nav-bar*/
+    font-size: 18px; /*size of the font*/
+    float: left; /*placement of the name in the nav-bar (Lucas Bendix Jolibois Portfolio)*/
+    font-weight: bold; /*makes the text bold in the name of the nav*/
+}
+
+/*push the menu options to the right*/
+header nav{
+    float: right; /*pushes the navigation options to the right*/
+}
+
+/*display flex*/
+header nav ul{
+    margin: 0; /*removes margin*/
+    padding: 0; /*removes padding*/
+    display: flex; /*dispay flex puts the navigation enxt to eachother in a line*/
+}
+
+/*removed liststyle*/
+header nav ul li{
+    list-style: none; /*does so that it isnt displayed in a list style*/
+}
+
+/*adapted the menu optiosn to the nav bar on desktop*/
+header nav ul li a{
+    height: 50px; /*height of the nav*/
+    line-height: 50px; /*lineheight of the bar*/
+    padding: 0 20px; /*padding between nav menu options*/
+    color: #000; /*color of nav*/
+    text-decoration: none; /*no text decoration*/
+    display: block; /*displays it as a block around the different nav options*/
+}
+
+/*added a hover effect and a location effect*/
+header nav ul li a:hover,
+header nav ul li a.active{
+    color: #FA6A29; /*turnes the text on nav orange when hover is activated*/
+    background: transparent; /*turnes the background on nav black when hover is activated*/
+}
+
+/*added the bruger menu to the menubare and removed it for desktop*/
+.burger-menu{
+    color: #FA6A29; /*white burger menu*/
+    float: right; /*pushes the burger menu to the right*/
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer; /*shows that it is clickable*/
+    display: none; /*removes the visibility of the bruger menu when its on desktop*/
+}
+
+
+
+
+
+
+
 .btn-grad {background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%)}
 .btn-grad {
    
@@ -70,7 +143,7 @@
     text-align: center;
     padding-left: 30%;
     padding-right: 30%;
-    padding-top: 45vh;
+    padding-top: 40vh;
     font-weight: 600;
     font-size: 40px;
 }
@@ -80,18 +153,19 @@
 }
 
 .scroll-icon{
+	position: absolute;
     height: auto;
     width: 30px;
     display: inline-block;
     text-align: center;
     margin-top: 40px;
-	margin-bottom: 30vh;
 
 }
 
 div, .scroll-icon-position{
     text-align: center;
   }
+
 
 
   .about-me-h2{
@@ -101,8 +175,21 @@ div, .scroll-icon-position{
     padding-top: 50px;
     font-weight: 600;
     font-size: 40px;
+	padding-top: 28%;
   }
 
+
+  .me-h2{
+    text-align: center;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 50px;
+    font-weight: 600;
+    font-size: 40px;
+	
+  }
+
+  
 
   .about-me-p{
       padding-left: 22%;
@@ -636,7 +723,7 @@ input[type="button"].concord-exit:active{
 
 .active,
 .dot:hover {
-    background-color: #717171
+    background-color: #e2e0e0
 }
 
 
@@ -743,3 +830,134 @@ input[type="button"].concord-exit:active{
 	}
 }
 
+
+/*------- MEDIA QUERIES PRIMARILY FOR THE NAVIGATION--------*/
+
+
+/*@media for the menu for everything smaller than 990 pixels*/
+@media (max-width: 990px){
+    header{
+        padding: 0 20px;
+    }
+
+/*made the bruger menu visible on smaller devices (to make it responsive)*/
+    .burger-menu{
+        display: block;
+    }
+
+/*made the burger menu usable (on smaller devices)*/
+    header nav{
+        /*display: none;*/
+        
+        position: absolute; /*makes invisible so that you'll see the main page*/
+        width: 100%;
+        height: calc(100vh - 50px); /*100vh does so that the menu bare on phone uses all the screen. retracting 50px as the 100vh uses abit more than the whole screen*/
+        background: #fff;
+        z-index: 2; /*puts the burger menu infront as i had trouble with it either being behind the youtbe video or covering it so that the youtube video wouldn't play*/
+        top: 50px; /*how far down it is places from the top*/
+        left: -100%; /*does so that the menu bar comes from the left side. if it was without the -, it would have come from the right side*/
+        transition: 0.5s; /*how long it takes for the menu bare to apear. 0.5s gives it time to show the transition*/
+    }
+
+/*code for the header nav. when its active the menu bar will apoear at the middle of the screen instead of being on the left side*/
+    header nav.active{
+        left: 0;
+    }
+
+/*code for the menu on smaller devices*/
+    header nav ul{
+        display: block; /*alignes the menu downwards*/
+        text-align: center; /*centers it so that it isnt on the left side*/
+    }
+
+/*box code*/
+    header nav ul li a{
+        border-bottom: 1px solid #333333; /*adds a line around the menu options so that you can differentiate between the boxes of the meu options and the the limits and where it ends*/
+    }
+}
+
+
+@media (max-width: 340px){
+header .logo{
+    font-size: 15px;
+	
+}
+}
+
+@media (max-width: 380px){
+	.title-home{
+		text-align: center;
+		padding-left: 10%;
+		padding-right: 10%;
+		padding-top: 20vh;
+		font-weight: 600;
+		font-size: 25px;
+	}
+
+
+	.scroll-icon{
+		position: absolute;
+		height: auto;
+		width: 18px;
+		display: inline-block;
+		text-align: center;
+		margin-top: 15px;
+	
+	}
+	
+
+	.me-h2{
+		text-align: center;
+		padding-left: 10%;
+		padding-right: 10%;
+		padding-top: 50px;
+		font-weight: 600;
+		font-size: 25px;
+		
+	  }
+	
+	  
+	
+	  .about-me-p{
+		  padding-left: 10%;
+		  padding-right: 10%;
+		  text-align: center;
+		  font-size: 15px;
+	  }
+
+	  .about-me-h2{
+		text-align: center;
+		padding-left: 10%;
+		padding-right: 10%;
+		padding-top: 50px;
+		font-weight: 600;
+		font-size: 25px;
+		padding-top: 37%;
+	  }
+
+	  .featured-projects-h2{
+		text-align: center;
+		padding-left: 10%;
+		padding-right: 10%;
+		padding-top: 22vh;
+		font-weight: 600;
+		font-size: 25px;
+	  }
+
+	  h1 {
+		font-size: 22px;
+	}
+}
+
+@media (max-width: 299px){
+    header .logo{
+        font-size: 11px;
+    
+    }}
+
+
+    @media (max-width: 235px){
+        header .logo{
+            font-size: 10px;
+        
+        }}
