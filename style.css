@@ -961,3 +961,412 @@ header .logo{
             font-size: 10px;
         
         }}
+
+	
+
+		@media (max-width: 489px){
+			.title-home{
+				text-align: center;
+				padding-left: 10%;
+				padding-right: 10%;
+				padding-top: 20vh;
+				font-weight: 600;
+				font-size: 25px;
+			}
+		
+		
+			.scroll-icon{
+				position: absolute;
+				height: auto;
+				width: 18px;
+				display: inline-block;
+				text-align: center;
+				margin-top: 15px;
+			
+			}
+			
+		
+			.me-h2{
+				text-align: center;
+				padding-left: 10%;
+				padding-right: 10%;
+				padding-top: 50px;
+				font-weight: 600;
+				font-size: 25px;
+				
+			  }
+			
+			  
+			
+			  .about-me-p{
+				  padding-left: 10%;
+				  padding-right: 10%;
+				  text-align: center;
+				  font-size: 15px;
+			  }
+		
+			  .about-me-h2{
+				text-align: center;
+				padding-left: 10%;
+				padding-right: 10%;
+				padding-top: 50px;
+				font-weight: 600;
+				font-size: 25px;
+				padding-top: 37%;
+			  }
+		
+			  .featured-projects-h2{
+				text-align: center;
+				padding-left: 10%;
+				padding-right: 10%;
+				padding-top: 22vh;
+				font-weight: 600;
+				font-size: 25px;
+			  }
+		
+			  h1 {
+				font-size: 22px;
+			}
+		}
+
+
+
+
+
+
+
+		@media only screen and (max-width: 407px) and (min-width: 400px)  {
+			.title-home{
+				text-align: center;
+				padding-left: 10%;
+				padding-right: 10%;
+				padding-top: 20vh;
+				font-weight: 600;
+				font-size: 20px;
+			}
+		
+		
+			.scroll-icon{
+				position: absolute;
+				height: auto;
+				width: 18px;
+				display: inline-block;
+				text-align: center;
+				margin-top: 15px;
+			
+			}
+		
+
+			.me-h2{
+				text-align: center;
+				padding-left: 10%;
+				padding-right: 10%;
+				padding-top: 50px;
+				font-weight: 600;
+				font-size: 25px;
+				
+			  }
+			
+			  
+			
+			  .about-me-p{
+				  padding-left: 10%;
+				  padding-right: 10%;
+				  text-align: center;
+				  font-size: 15px;
+			  }
+		
+			  .about-me-h2{
+				text-align: center;
+				padding-left: 10%;
+				padding-right: 10%;
+				padding-top: 50px;
+				font-weight: 600;
+				font-size: 25px;
+				padding-top: 37%;
+			  }
+		
+			  .featured-projects-h2{
+				text-align: center;
+				padding-left: 10%;
+				padding-right: 10%;
+				padding-top: 22vh;
+				font-weight: 600;
+				font-size: 25px;
+			  }
+		
+			  h1 {
+				font-size: 22px;
+			}
+			
+		}
+
+
+
+
+		 @media only screen and (max-width: 632px) and (min-width: 489px)  {
+			.title-home{
+				text-align: center;
+				padding-left: 10%;
+				padding-right: 10%;
+				padding-top: 42vh;
+				font-weight: 600;
+				font-size: 33px;
+			}
+		
+		
+			.scroll-icon{
+				position: absolute;
+				height: auto;
+				width: 18px;
+				display: inline-block;
+				text-align: center;
+				margin-top: 15px;
+			
+			}
+			
+		
+			.me-h2{
+				text-align: center;
+				padding-left: 10%;
+				padding-right: 10%;
+				padding-top: 50px;
+				font-weight: 600;
+				font-size: 33px;
+				
+			  }
+			
+			  
+			
+			  .about-me-p{
+				  padding-left: 10%;
+				  padding-right: 10%;
+				  text-align: center;
+				  font-size: 15px;
+			  }
+		
+			  .about-me-h2{
+				text-align: center;
+				padding-left: 10%;
+				padding-right: 10%;
+				padding-top: 50px;
+				font-weight: 600;
+				font-size: 33px;
+				padding-top: 45vh;
+			  }
+		
+			  .featured-projects-h2{
+				text-align: center;
+				padding-left: 10%;
+				padding-right: 10%;
+				padding-top: 22vh;
+				font-weight: 600;
+				font-size: 33px;
+			  }
+		
+			  h1 {
+				font-size: 22px;
+			}
+		}
+
+
+		@media only screen and (max-width: 770px) and (min-width: 633px)  {
+			.title-home{
+				text-align: center;
+				padding-left: 10%;
+				padding-right: 10%;
+				padding-top: 42vh;
+				font-weight: 600;
+				font-size: 33px;
+			}
+		
+		
+			.scroll-icon{
+				position: absolute;
+				height: auto;
+				width: 18px;
+				display: inline-block;
+				text-align: center;
+				margin-top: 15px;
+			
+			}
+			
+		
+			.me-h2{
+				text-align: center;
+				padding-left: 10%;
+				padding-right: 10%;
+				padding-top: 50px;
+				font-weight: 600;
+				font-size: 33px;
+				
+			  }
+			
+			  
+			
+			  .about-me-p{
+				  padding-left: 10%;
+				  padding-right: 10%;
+				  text-align: center;
+				  font-size: 15px;
+			  }
+		
+			  .about-me-h2{
+				text-align: center;
+				padding-left: 10%;
+				padding-right: 10%;
+				padding-top: 50px;
+				font-weight: 600;
+				font-size: 33px;
+				padding-top: 49vh;
+			  }
+		
+			  .featured-projects-h2{
+				text-align: center;
+				padding-left: 10%;
+				padding-right: 10%;
+				padding-top: 22vh;
+				font-weight: 600;
+				font-size: 33px;
+			  }
+		
+			  h1 {
+				font-size: 22px;
+			}
+		}
+
+
+
+		@media only screen and (max-width: 990px) and (min-width: 771px)  {
+			.title-home{
+				text-align: center;
+				padding-left: 10%;
+				padding-right: 10%;
+				padding-top: 42vh;
+				font-weight: 600;
+				font-size: 39px;
+			}
+		
+		
+			.scroll-icon{
+				position: absolute;
+				height: auto;
+				width: 18px;
+				display: inline-block;
+				text-align: center;
+				margin-top: 15px;
+			
+			}
+			
+		
+			.me-h2{
+				text-align: center;
+				padding-left: 10%;
+				padding-right: 10%;
+				padding-top: 50px;
+				font-weight: 600;
+				font-size: 33px;
+				
+			  }
+			
+			  
+			
+			  .about-me-p{
+				  padding-left: 10%;
+				  padding-right: 10%;
+				  text-align: center;
+				  font-size: 15px;
+			  }
+		
+			  .about-me-h2{
+				text-align: center;
+				padding-left: 10%;
+				padding-right: 10%;
+				padding-top: 50px;
+				font-weight: 600;
+				font-size: 33px;
+				padding-top: 45vh;
+			  }
+		
+			  .featured-projects-h2{
+				text-align: center;
+				padding-left: 10%;
+				padding-right: 10%;
+				padding-top: 22vh;
+				font-weight: 600;
+				font-size: 33px;
+			  }
+		
+			  h1 {
+				font-size: 22px;
+			}
+		}
+
+
+		@media only screen and (max-width: 1125px) and (min-width: 991px)  {
+			.title-home{
+				text-align: center;
+				padding-left: 10%;
+				padding-right: 10%;
+				padding-top: 42vh;
+				font-weight: 600;
+				font-size: 39px;
+			}
+		
+		
+			.scroll-icon{
+				position: absolute;
+				height: auto;
+				width: 18px;
+				display: inline-block;
+				text-align: center;
+				margin-top: 15px;
+			
+			}
+			
+		
+			.me-h2{
+				text-align: center;
+				padding-left: 10%;
+				padding-right: 10%;
+				padding-top: 50px;
+				font-weight: 600;
+				font-size: 33px;
+				
+			  }
+			
+			  
+			
+			  .about-me-p{
+				  padding-left: 10%;
+				  padding-right: 10%;
+				  text-align: center;
+				  font-size: 15px;
+			  }
+		
+			  .about-me-h2{
+				text-align: center;
+				padding-left: 10%;
+				padding-right: 10%;
+				padding-top: 50px;
+				font-weight: 600;
+				font-size: 33px;
+				padding-top: 45vh;
+			  }
+		
+			  .featured-projects-h2{
+				text-align: center;
+				padding-left: 10%;
+				padding-right: 10%;
+				padding-top: 22vh;
+				font-weight: 600;
+				font-size: 33px;
+			  }
+		
+			  h1 {
+				font-size: 22px;
+			}
+		}
+
+
+
