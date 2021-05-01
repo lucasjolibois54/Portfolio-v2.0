@@ -62,8 +62,17 @@ header nav ul li a{
     color: #000; /*color of nav*/
     text-decoration: none; /*no text decoration*/
     display: block; /*displays it as a block around the different nav options*/
+	transition: .22s ease-in-out;
+	position: relative;
+	top: 0;
 }
 
+header nav a:hover{
+transition: .22s ease-in-out;
+top: -3px;
+font-size: 18px;
+
+}
 /*added a hover effect and a location effect*/
 header nav ul li a:hover,
 header nav ul li a.active{
