@@ -736,7 +736,9 @@ input[type="button"].concord-exit:active{
 }
 
 
-
+.about-me-h2{
+	margin-bottom: 12px;
+}
 
 /*footer*/
 .the-site-footer{
