@@ -81,7 +81,7 @@
 
 .scroll-icon{
     height: auto;
-    width: 2%;
+    width: 30px;
     display: inline-block;
     text-align: center;
     margin-top: 40px;
@@ -650,39 +650,6 @@ input[type="button"].concord-exit:active{
 
 .raah{
 	padding-bottom: 5vh;
-}
-
-.contact-icons{
-	border: 10px solid rgb(219, 24, 24);
-	-moz-border-radius: 10px;
-	background:url(map_background_box_right.png);
-}
-
-
-div .message-bg {
-	border: 10px solid rgb(0, 117, 36);
-	-moz-border-radius: 10px;
-	background:url("message-icon@2x.png");
-
-}
-
-.mes{
-	display: block;
-	width: 40%;
-	background-color: #D7793E;
-	padding: 9% 9%;
-	border-radius: 50%;
-}
-
-
-
-
-.linked{
-	display: block;
-	width: 40%;
-	background-color: #D7793E;
-	padding: 9% 9%;
-	border-radius: 50%;
 }
 
 
