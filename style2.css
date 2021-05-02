@@ -1,0 +1,214 @@
+@font-face {
+	font-family: Roboto;
+	src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/565097/Roboto-Regular.woff2")
+			format("woff2"),
+		url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/565097/Roboto-Regular.woff")
+			format("woff"),
+		url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/565097/Roboto-Regular.ttf")
+			format("ttf");
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+
+/* RESET RULES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+    --black: #000;
+    --white: #fff;
+    --green: #FA6A29;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  ol {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  body {
+    margin: 50px 0;
+    color: var(--black);
+    font: 1rem/1.3 sans-serif;
+  }
+  
+  .author-archive {
+    padding: 1.5rem;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+      margin-top: 60px;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  h1 a {
+    transition: all 0.1s;
+  }
+  
+  h1 a:hover {
+    background: var(--green);
+    color: var(--white);
+  }
+  
+  input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+  }
+  
+  
+  /* FILTERS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .filters {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .filters * {
+    display: inline-block;
+  }
+  
+  .filters label {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.25rem;
+    border-radius: 2rem;
+    min-width: 50px;
+    line-height: normal;
+    cursor: pointer;
+    transition: all 0.1s;
+  }
+  
+  .filters label:hover {
+    background: var(--green);
+    color: var(--white);
+  }
+  
+  
+  /* FILTERED ELEMENTS (POSTS)
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .posts {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .posts .post {
+    background: #fafafa;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .posts .post-title {
+    font-size: 1.3rem;
+  }
+  
+  .posts .post-title:hover {
+    text-decoration: underline;
+  }
+  
+  .posts figcaption {
+    padding: 1rem;
+  }
+  
+  .posts .post-categories {
+    margin-bottom: 0.75rem;
+    font-size: 0.75rem;
+  }
+  
+  .posts .post-categories * {
+    display: inline-block;
+  }
+  
+  .posts .post-categories li {
+    margin-bottom: 0.2rem;
+  }
+  
+  .posts .post-categories a {
+    padding: 0.2rem 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid;
+    line-height: normal;
+    transition: all 0.1s;
+  }
+  
+  .posts .post-categories a:hover {
+    background: var(--green);
+    color: var(--white);
+  }
+  
+  
+  /* FILTERING RULES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  [value="All"]:checked ~ .filters [for="All"],
+  [value="UX"]:checked ~ .filters [for="UX"],
+  [value="LOGO"]:checked ~ .filters [for="LOGO"],
+  [value="Web"]:checked ~ .filters [for="Web"],
+  [value="WordPress"]:checked ~ .filters [for="WordPress"],
+  [value="Graphic"]:checked ~ .filters [for="Graphic"],
+  [value="Photo-Vid"]:checked ~ .filters [for="Photo-Vid"] {
+    background: var(--green);
+    color: var(--white);
+  }
+  
+  [value="All"]:checked ~ .posts [data-category] {
+    display: block;
+  }
+  
+  [value="UX"]:checked ~ .posts .post:not([data-category~="UX"]),
+  [value="Logo"]:checked ~ .posts .post:not([data-category~="Logo"]),
+  [value="Web"]:checked ~ .posts .post:not([data-category~="Web"]),
+  [value="WordPress"]:checked ~ .posts .post:not([data-category~="WordPress"]),
+  [value="Graphic"]:checked ~ .posts .post:not([data-category~="Graphic"]),
+  [value="Photo-Vid"]:checked ~ .posts .post:not([data-category~="Photo-Vid"]) {
+    display: none;
+  }
+  
+  
+  /* FOOTER
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  footer {
+    font-size: 1rem;
+    padding: 0 1.5rem;
+    text-align: right;
+  }
+  
+  footer span {
+    color: #e31b23;
+  }
+  
+  
+  /* MQ
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  @media screen and (max-width: 900px) {
+    .posts {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    html {
+      font-size: 14px;
+    }
+  
+    .posts {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }

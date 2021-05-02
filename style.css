@@ -664,7 +664,7 @@ input[type="button"].concord-exit:active{
 .mySlides {
     display: none;
   height: auto;
-  border: solid 1px black;
+  border: solid 0px black;
      
 }
 
