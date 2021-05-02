@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/06755d9ca7.js"></script> 
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+ 
+
+		 <!-- Navigation bar -->
+		 <header>
+			<!--logo (name of the portfolio)-->
+			<div class="logo">Lucas Bendix Jolibois - Portfolio</div>
+
+			<!--The menu options-->
+			<nav >
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="my-projects.html">My projects</a></li>
+				<li><a class="active" href="about-me.html">About me</a></li>
+				<li><a href="contact-me.html">Contact me</a></li>
+			</ul>
+
+			<!--the burger menu-->
+		</nav>
+		<div class="burger-menu"><i class="fas fa-bars"></i></div>
+		</header>
+
+<section>
+    <h1 class="about_me">About me</h1>
+    <p class="about-me-p">
+        Hi! My name is Lucas and I enjoy designing & creating things 
+that live on the internet. <br><br>
+
+My interest in informatics started back in 2017 when I decided 
+to study computer science in highschool. Back then I was building &
+developing circuits with arduino.  <br>
+— All of that led me to where I am now! <br> <br>
+
+At the moment I am a student at Zealand Business Academy, studying
+multimedia designer. I have developed at larger reach of interest within
+web- development and graphic design. At the moment my biggest
+interests are in UX & UI- design, web- development, logo design, 
+graphic design and things within that niche.
+
+    </p>
+</section>
+      
+
+        
+         <!--Makes the burger menu usable so that it has a function-->
+		 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+		 <script type="text/javascript">
+		 $(document).ready(function(){ /*all selectors starts with a "$"*/
+		 $('.burger-menu').click(function(){ /*makes it posible to click on the burger menu and adds a function to it*/
+		 $('nav').toggleClass('active')}) })</script>  <!--does so that the function that the bruger menu has is to activate the nav bar (the elemtent "nav" will be shown)-->
+
+    </body>
+</html>

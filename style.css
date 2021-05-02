@@ -806,6 +806,11 @@ input[type="button"].concord-exit:active{
 		font-size: 17px;
 	}
 
+
+	.about_me{
+		margin-top: 25vh;
+	}
+
 @media screen and (min-width: 530px){
 	.card{
 		width: 75%;
