@@ -589,6 +589,15 @@ input[type="button"].concord-exit:active{
 }
 
 .raa-1{
+	margin-top: 100px;
+	margin-bottom: 0px;
+	padding-left: 19%;
+	padding-right: 19%;
+    width: 100%;
+    height: auto;
+}
+
+.raama-1{
 	margin-top: 50px;
 	margin-bottom: 0px;
 	padding-left: 19%;
